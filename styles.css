@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+
+    font-family: Cambria, serif;
+
+}
+
+.website-header-container {
+
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.website-heading {
+
+    border: 1px solid black;
+    width: auto;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+    margin-left: 100px;
+    font-size: 32px;
+}
+
+.website-navigation-container {
+
+
+    width: auto;
+    margin-right: 100px;
+
+}
+
+.website-navigation-list-container {
+
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.website-navigation-list-item {
+
+
+    padding: 10px 20px 10px 20px;
+}
+
+.website-navigation-list-item-link {
+
+    padding: 5px;
+}
+
+
+.website-navigation-hamburger {
+
+
+
+    width: 32px;
+    height: 32px;
+
+    margin-right: 4px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.website-navigation-hamburger-line {
+
+    width: 32px;
+    height: 8px;
+
+    background-color: black;
+}
+
+.mobile-navigation{
+
+    width: 300px;
+    height: 500px;
+    margin-top: 40px;
+    border: 1px solid black;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.mobile-navigation-list-container {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+
+.mobile-navigation-list-item {
+
+    margin: 30px 0 0 30px;
+    border: 1px solid black;
+}
+
+.mobile-navigation-list-item-link {
+
+    font-size: 32px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px ) {
+
+    .website-navigation-hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .website-navigation-container {
+        display: none;
+    }
+
+    .website-heading {
+
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .website-heading {
+        font-size: 24px;
+    }
+
+
+}
